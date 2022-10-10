@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica M06-UF1 Nikita</title>
+  <link rel="stylesheet" type="text/css"href="../styles/main.css">
+  <script src="../scripts/get_set_cokie.js" defer></script>
+  <script src="../scripts/index.js" defer></script>
+</head>
+<body>
+  <h1 class="shadow">la salle bet</h1>
+  <div id="chips-div">
+    <p id="chips"></p>
+  </div>
+  <div id="add-chips-div">
+    <h3>Comprar</h3>
+    <label for="add-chips">Comprar fichas</label>
+    <input type="number" min="0" id="add-chips">
+    <button id="add-chips-btn">+</button>
+    <div id="add-chip-error"></div>
+  </div>
+  <div id="bet-div">
+    <h3>Apostar</h3>
+    <label for="bet">Numero fichas</label>
+    <input type="number" min="10" id="bet">
+    <label for="bet-type">par o impar</label>
+    <select id="bet-type">
+      <option value="none">--none--</option>
+      <option value="par">par</option>
+      <option value="impar">impar</option>
+    </select>
+    <br><br>
+    <div id="bet-number-div"><label for="bet-number">numero de la apuesta</label>
+    <input type="number" id="bet-number"></div>
+    <button id="bet-btn">bet</button>
+    <div id="bet-error"></div>
+  </div>
+  <div id="test-div">
+    <h3>Test</h3>
+    <select id="test">
+      <option value="none">--none--</option>
+      <option value="win">test-win</option>
+      <option value="lose">test-lose</option>
+    </select>
+  </div>
+  <div class="ruleta-div">
+    <img id="ruleta" src="../fotos/pngegg.png" alt="foto-ruleta">
+    <div class="flecha">➤</div>
+  </div>
+</body>
+</html>
